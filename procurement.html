@@ -12,7 +12,10 @@
     <div class="container">
         <h1>Procurement Form</h1>
 
+        <!-- Procurement entry form -->
         <form action="">
+
+            <!-- Supplier information -->
             <div class="lab">
                 <label>Supplier Name</label>
                 <input type="text" required>
@@ -23,6 +26,7 @@
                 <input type="tel" required>
             </div>
 
+            <!-- Purchase details -->
             <div class="lab">
                 <label>Purchase Date</label>
                 <input type="date" required>
@@ -33,6 +37,7 @@
                 <input type="text" required>
             </div>
 
+            <!-- Product information -->
             <div class="lab">
                 <label>Product Name</label>
                 <input type="text" required>
@@ -49,6 +54,7 @@
                 </select>
             </div>
 
+            <!-- Quantity and pricing -->
             <div class="lab">
                 <label>Quantity</label>
                 <input type="number" required>
@@ -59,11 +65,13 @@
                 <input type="number" step="0.01" required>
             </div>
 
+            <!-- Auto-calculated total -->
             <div class="lab">
                 <label>Total Amount</label>
                 <input type="number" readonly>
             </div>
 
+            <!-- Payment information -->
             <div class="rad">
                 <label>Payment Method</label>
                 <label><input type="radio" name="payment_method" value="Cash"> Cash</label>
@@ -79,25 +87,30 @@
                 <label><input type="radio" name="payment_status" value="Partial"> Partial</label>
             </div>
 
+            <!-- Delivery info -->
             <div class="lab-date">
                 <label>Delivery Date</label>
                 <input type="date" required>
             </div>
 
+            <!-- description -->
             <div class="lab-textarea">
                 <label>Notes / Description</label>
                 <textarea rows="4"></textarea>
             </div>
 
+            <!-- Receipt file upload -->
             <div class="lab">
                 <label>Receipt Upload</label>
                 <input type="file" accept="image/*">
             </div>
 
+            <!-- Form actions -->
             <div class="buttonG">
                 <button type="submit" class="btn1">Submit</button>
                 <button type="reset" class="resetb">Reset</button>
             </div>
+
         </form>
     </div>
 
