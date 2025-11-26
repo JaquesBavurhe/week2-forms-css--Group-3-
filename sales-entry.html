@@ -5,25 +5,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="/CSS/sales-entry.css">
+    <link rel="stylesheet" href="./CSS/sales-entry.css">
 </head>
 
 <body>
     <div class="container">
         <h1>Sales Entry Form</h1>
 
+        <!-- Main sales entry form -->
         <form>
 
+            <!-- Auto-generated sales ID -->
             <div class="lab">
                 <label>Sales ID / Receipt No.</label>
                 <input type="text" readonly>
             </div>
 
+            <!-- Date and time of sale -->
             <div class="lab">
                 <label>Sales Date & Time</label>
                 <input type="datetime-local">
             </div>
 
+            <!-- Customer info -->
             <div class="lab">
                 <label>Customer Name</label>
                 <input type="text">
@@ -39,6 +43,7 @@
                 <input type="email">
             </div>
 
+            <!-- Customer Type selection -->
             <div class="rad">
                 <label>Customer Type</label>
                 <label><input type="radio" name="customer_type" value="Walk-in"> Walk-in</label>
@@ -46,6 +51,7 @@
                 <label><input type="radio" name="customer_type" value="Credit Customer"> Credit Customer</label>
             </div>
 
+            <!-- Product details -->
             <div class="lab">
                 <label>Product / Item Name</label>
                 <input type="text">
@@ -62,6 +68,7 @@
                 </select>
             </div>
 
+            <!-- Pricing inputs -->
             <div class="lab">
                 <label>Quantity Sold</label>
                 <input type="number">
@@ -77,6 +84,7 @@
                 <input type="number" min="0" max="100">
             </div>
 
+            <!-- Auto-calculated fields(readonly) -->
             <div class="lab">
                 <label>Subtotal</label>
                 <input type="number" readonly>
@@ -92,6 +100,7 @@
                 <input type="number" readonly>
             </div>
 
+            <!-- Payment selection -->
             <div class="rad">
                 <label>Payment Method</label>
                 <label><input type="radio" name="payment_method" value="Cash"> Cash</label>
@@ -115,11 +124,13 @@
                 <input type="text">
             </div>
 
+            <!-- Optional notes -->
             <div class="lab-textarea">
                 <label>Additional Notes</label>
                 <textarea rows="4"></textarea>
             </div>
 
+            <!-- Form actions -->
             <div class="buttonG">
                 <button type="submit" class="btn1">Submit Sale</button>
                 <button type="reset" class="resetb">Clear Form</button>
@@ -127,6 +138,7 @@
 
         </form>
     </div>
+
 </body>
 
 
